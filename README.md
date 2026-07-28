@@ -66,6 +66,9 @@ jupyter notebook notebook/week4_ets_forecasting.ipynb
 jupyter notebook notebook/week5_scenarios.ipynb   # optional
 ```
 
+Or run all five non-interactively with `./run_notebooks.sh` (requires
+`data/owid-co2-data.csv` to already be downloaded).
+
 ### 6. Run the Streamlit app (Week 6 stretch goal)
 > **Prerequisite:** Complete Week 2 first so that `data/ghg_features.csv` exists.
 
