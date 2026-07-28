@@ -10,20 +10,6 @@ This project builds an end-to-end analytical pipeline on open Greenhouse Gas (GH
 
 ---
 
-## Team
-
-| Name | Institute | Stream |
-|------|-----------|--------|
-| [YOUR NAME] | [YOUR INSTITUTE] | [YOUR STREAM] |
-| [YOUR NAME] | [YOUR INSTITUTE] | [YOUR STREAM] |
-| [YOUR NAME] | [YOUR INSTITUTE] | [YOUR STREAM] |
-| [YOUR NAME] | [YOUR INSTITUTE] | [YOUR STREAM] |
-| [YOUR NAME] | [YOUR INSTITUTE] | [YOUR STREAM] |
-| [YOUR NAME] | [YOUR INSTITUTE] | [YOUR STREAM] |
-| [YOUR NAME] | [YOUR INSTITUTE] | [YOUR STREAM] |
-
----
-
 ## Setup
 
 ### 1. Clone the repository
