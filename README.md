@@ -54,9 +54,16 @@ curl -o data/owid-co2-data.csv \
 
 Or download manually from: https://github.com/owid/co2-data
 
-### 5. Run the notebook
+### 5. Run the notebooks
+The analysis is split across five per-week notebooks that share constants from
+`notebook/constants.py`. Run them in order:
+
 ```bash
-jupyter notebook notebook/ghg_analysis.ipynb
+jupyter notebook notebook/week1_eda.ipynb
+jupyter notebook notebook/week2_features.ipynb
+jupyter notebook notebook/week3_regression.ipynb
+jupyter notebook notebook/week4_ets_forecasting.ipynb
+jupyter notebook notebook/week5_scenarios.ipynb   # optional
 ```
 
 ### 6. Run the Streamlit app (Week 6 stretch goal)
@@ -82,7 +89,12 @@ streamlit run app.py
 ```
 ghg-trend-analysis-forecasting/
 ├── notebook/
-│   └── ghg_analysis.ipynb     ← Main analysis notebook (fill in week by week)
+│   ├── constants.py           ← Shared constants (countries, features, paths) — imported by all week notebooks
+│   ├── week1_eda.ipynb        ← Week 1: data loading, profiling, EDA
+│   ├── week2_features.ipynb   ← Week 2: feature engineering
+│   ├── week3_regression.ipynb ← Week 3: Linear Regression + Random Forest
+│   ├── week4_ets_forecasting.ipynb ← Week 4: ETS(A,Ad,N) Holt Damped forecasting
+│   └── week5_scenarios.ipynb  ← Week 5: scenario analysis (optional)
 ├── data/
 │   ├── .gitkeep               ← Keeps the folder in git; actual CSVs are gitignored
 │   ├── owid-co2-data.csv      ← Download manually (see Setup above)
@@ -101,7 +113,7 @@ ghg-trend-analysis-forecasting/
 Commit your notebook to GitHub at the end of every week using a clear message:
 
 ```bash
-git add notebook/ghg_analysis.ipynb
+git add notebook/week1_eda.ipynb
 git commit -m "Week 1: data loading, profiling, and EDA complete"
 git push
 ```
